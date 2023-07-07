@@ -14,6 +14,13 @@
     /* #dd292a */
     --clr-white: 180, 1%, 86%;
     /* #dbdcdc */
+    --clr-green: 121.37, 57.71%, 44.51%;
+    /* #30B333 */
+    --clr-orange: 44.72, 93.81%, 44.31%;
+    /* #dbdcdc */
+    --clr-blue: 189.71, 43.04%, 69.02%;
+    /* #8EC7D2 */
+ 
    
     
     /* font-sizes */
@@ -93,8 +100,11 @@ body {
     width: min(100% - 3rem, 65ch);
     margin-inline: auto; 
     margin-top: 3em;
+  }
+
+  .container {
     padding: 2em 1em;
-    background-color: azure;
+    background-color: var(--clr-white);
     border-radius: 15px
   }
 
@@ -115,7 +125,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgb(16, 16, 9);
     transition: box-shadow 0.3s ease;
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     }
 
 .main-btn:hover {
@@ -131,6 +141,9 @@ body {
 .bg-dark { background-color: hsl( var(--clr-dark) );}
 .bg-accent { background-color: hsl( var(--clr-accent) );}
 .bg-white { background-color: hsl( var(--clr-white) );}
+.bg-orange { background-color: hsl( var(--clr-orange) );}
+.bg-green { background-color: hsl( var(--clr-green) );}
+.bg-blue { background-color: hsl( var(--clr-blue) );}
 
 .text-dark { color: hsl( var(--clr-dark) );}
 .text-accent { color: hsl( var(--clr-accent) );}
@@ -169,7 +182,7 @@ body {
 /* Apple shelf */
 
 #apple-shelf {
-    background: orange;
+    background: var();
     border-radius: 10px;
     height: 30px;
     margin: 10px 0;
@@ -178,7 +191,6 @@ body {
 /* Orange shelf */
 
 #orange-shelf {
-    background: green;
     border-radius: 10px;
     height: 30px;
 }
@@ -186,7 +198,6 @@ body {
 /* Fruit display */
 
 #fruit-display {
-    background: lightblue;
     border-radius: 10px;
     height: 30px;
 }
